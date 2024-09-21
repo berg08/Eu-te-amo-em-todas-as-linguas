@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu te amo em todas as línguas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+            color: white;
+            text-align: center;
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+
+        .scroll-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            height: 50%;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+        }
+
+        .scrolling-list {
+            display: block;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            animation: scroll 25s linear infinite;
+            text-align: center;
+        }
+
+        .language {
+            font-size: 2.5em;
+            margin: 40px 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .language:hover {
+            transform: scale(1.1);
+            color: #ffdf00;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 1.1em;
+            color: rgba(255, 255, 255, 0.7);
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #ffdf00;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Eu te amo em todas as línguas!</h1>
+
+    <div class="scroll-container">
+        <ul class="scrolling-list">
+            <li class="language">Inglês: I love you</li>
+            <li class="language">Francês: Je t'aime</li>
+            <li class="language">Alemão: Ich liebe dich</li>
+            <li class="language">Italiano: Ti amo</li>
+            <li class="language">Japonês: 愛してる (Aishiteru)</li>
+            <li class="language">Russo: Я тебя люблю (Ya tebya lyublyu)</li>
+            <li class="language">Chinês: 我爱你 (Wǒ ài nǐ)</li>
+            <li class="language">Espanhol: Te quiero</li>
+            <li class="language">Árabe: أحبك (Uḥibbuka)</li>
+            <li class="language">Grego: Σ' αγαπώ (S'agapó)</li>
+            <li class="language">Coreano: 사랑해 (Saranghae)</li>
+            <li class="language">Hindi: मैं तुमसे प्यार करता हूँ (Main tumse pyar karta hoon)</li>
+            <li class="language">Turco: Seni seviyorum</li>
+            <li class="language">Sueco: Jag älskar dig</li>
+            <li class="language">Holandês: Ik hou van jou</li>
+            <li class="language">Polonês: Kocham cię</li>
+            <!-- Adicione mais idiomas se desejar -->
+        </ul>
+    </div>
+
+    <footer>
+        Desenvolvido com ♥ por <a href="#">Bergson</a>
+    </footer>
+
+</body>
+</html>
