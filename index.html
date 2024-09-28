@@ -102,6 +102,21 @@
             text-decoration: underline;
             color: #ffdf00;
         }
+
+        /* Ajuste da animação para dispositivos móveis */
+        @media (max-width: 768px) {
+            .scrolling-list {
+                animation: scroll 50s linear infinite; /* Mais lenta em dispositivos móveis */
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .language {
+                font-size: 1.8em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -177,8 +192,7 @@
             <li class="language">Yorubá: Mo nifẹ rẹ</li>
             <li class="language">Zulu: Ngiyakuthanda</li>
             <li class="language">Xhosa: Ndiyakuthanda</li>
-
-            <!-- Adicione mais idiomas se desejar -->
+            <!-- Lista de línguas (igual ao código anterior) -->
         </ul>
     </div>
 
